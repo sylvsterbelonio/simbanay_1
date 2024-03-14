@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <style>               
+                        *{font-family: Arial, Geneva, Helvetica, sans-serif; color:#ffffff}
+                        .text-default {color :#f2b909} 
+                        .text-primary { color: #168B8D;}
+                        .text-error { color: #dc3545;}
+                        .text-success {color: #168B8D;background-color: ;padding:10px}
+                        .text-secondary {color: #757575;}
+                        .text-light-primary { color: #1ebabd }
+                        .text-super-light-primary { color: #96f0f2 }
+                        .font-italic { font-style: italic; } 
+                        .font-bold { font-weight: bold; } 
+                        body { width:100%; background-color: #102E4A;margin: 0px; padding: 0px; height: 100%;font-size:12px;} 
+                        .content{  padding: 0px 20px 20px 20px; } 
+                        .indent{margin-left:40px} 
+                        .j{text-align:justify;} 
+                        .i{font-style: italic;}
+                        .c {text-align:center}
+                        .p{text-align: justify;} 
+                        .headings{background-color: #868784;padding: 14px 16px;box-shadow: 0 5px 7px rgb(0 0 0 / 0.4);} 
+                        .column { float: left; width: 50%; padding: 0px; }
+                        .row:after { content: ""; display: table; clear: both; }
+                        .mb-0{ margin-bottom:0dp; }
+                        .row{ padding-top:20px;margin-bottom:20px; }  
+                        .mt-1 {margin-top:10dp;}
+                        .verses{ display:none;padding:1px 16px 1px 16px;background-color:#168B8D;border-radius: 0px 20px 20px 20px;margin:4px 0px 0px 5px}
+                        .button-verse{width:30px;height:30px;background-color:#868784;border-color: white;display:inline;padding:5px 10px 5px 10px;color:#8b0000;border-radius: 10px 10px 0px 0px;margin:0px 0px 0px 5px}
+                        .button-verse-ext{display:inline;}
+                        .text-sm {font-size:10px;}
+                        .highlight-verse{background-color:#168B8D;color:white}
+                        .bullet-none{list-style:none}
+                        span{text-align:justify}
+                        .sj{text-align: justify; display:block;}
+                                               
+                        /* Style the tab */
+                        .tab {
+                          border-radius: 20px 20px 0px 0px;
+                          overflow: hidden;
+                          border: 1px solid #168B8D;
+                          background-color: #0d696b;
+                          color:"#ffffff";
+                        }
+                        .tab-2 {
+                          border-radius: 20px 20px 0px 0px;
+                          overflow: hidden;
+                          border: 1px solid #168B8D;
+                          background-color: #0d696b;
+                          color:"#ffffff";
+                        }
+                        .tab-3 {
+                          border-radius: 20px 20px 0px 0px;
+                          overflow: hidden;
+                          border: 1px solid #168B8D;
+                          background-color: #0d696b;
+                          color:"#ffffff";
+                        }
+
+                        /* Style the buttons inside the tab */
+                        .tab button {
+                          background-color: inherit;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          transition: 0.3s;
+                          font-size: 12px;
+                          color:"#ffffff";
+                        }
+                        .tab-2 button {
+                          background-color: inherit;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          transition: 0.3s;
+                          font-size: 12px;
+                          color:"#ffffff";
+                        }
+                        .tab-3 button {
+                          background-color: inherit;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          transition: 0.3s;
+                          font-size: 12px;
+                          color:"#ffffff";
+                        }
+
+                        /* Change background color of buttons on hover */
+                        .tab button:hover {
+                          background-color: #f2b909;
+                        }
+                        .tab-2 button:hover {
+                          background-color: #f2b909;
+                        }
+                        .tab-3 button:hover {
+                          background-color: #f2b909;
+                        }
+
+                        /* Create an active/current tablink class */
+                        .tab button.active {
+                          background-color: #f2b909;
+                        }
+                        .tab-2 button.active {
+                          background-color: #f2b909;
+                        }
+                        .tab-3 button.active {
+                          background-color: #f2b909;
+                        }
+
+                        /* Style the tab content */
+                        .tabcontent {
+                          display: none;
+                          background-color: #168B8D;
+                          padding: 6px 12px;
+                          border: 1px solid #168B8D;
+                          border-top: none;
+                          border-radius: 0px 0px 20px 20px;
+                          -webkit-animation: fadeEffect 1s;
+                          animation: fadeEffect 1s;
+                        }
+                        .tabcontent-2 {
+                          display: none;
+                          background-color: #168B8D;
+                          padding: 6px 12px;
+                          border: 1px solid #168B8D;
+                          border-top: none;
+                          border-radius: 0px 0px 20px 20px;
+                          -webkit-animation: fadeEffect 1s;
+                          animation: fadeEffect 1s;
+                        }
+                        .tabcontent-3 {
+                          display: none;
+                          background-color: #168B8D;
+                          padding: 6px 12px;
+                          border: 1px solid #168B8D;
+                          border-top: none;
+                          border-radius: 0px 0px 20px 20px;
+                          -webkit-animation: fadeEffect 1s;
+                          animation: fadeEffect 1s;
+                        }
+                                        
+                        /* Fade in tabs */
+                        @-webkit-keyframes fadeEffect {
+                          from {opacity: 0;}
+                          to {opacity: 1;}
+                        }
+
+                        @keyframes fadeEffect {
+                          from {opacity: 0;}
+                          to {opacity: 1;}
+                        }                                                                      
+                                                        
+  </style> 
+  </head>
+  <body>
+    <h3 class="headings">7. WORD | <span class="text-light-primary">PULONG SA DIOS</span></H3>
+    <div class="content">
+
+    <span class="sj"><b>Joshua 1:8-9</b></span><br>
+    
+     <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'NIV')">NIV</button>
+      <button class="tablinks" onclick="openCity(event, 'NLT')">NLT</button>
+      <button id="default" class="tablinks" onclick="openCity(event, 'RCPV')">RCPV</button>
+      <button id="btnClose" class="tablinks" style="float:right;display:none" onclick="closeAll()">x</button>
+    </div>
+    
+     <div id="NIV" class="tabcontent">
+            <div id="4-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">8</sup> Keep this Book of the Law always on your lips; meditate on it day and night, so that you may be careful to do everything written in it. Then you will be prosperous and successful. 
+                    <sup class="text-sm">9</sup> Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."     
+                </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="NLT" class="tabcontent">
+            <div id="5-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">8</sup> Study this Book of Instruction continually. Meditate on it day and night so you will be sure to obey everything written in it. Only then will you prosper and succeed in all you do.
+                    <sup class="text-sm">9</sup> This is my command - be strong and courageous! Do not be afraid or discouraged. For the Lord your God is with you wherever you go."     
+                </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="RCPV" class="tabcontent">
+            <div id="6-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">8</sup> Ayaw gayod kalimti ang basahon sa Balaod. Kinahanglan nga tun-an mo kini adlaw ug gabii ug pagkinabuhi sumala sa tanang nahasulat niini ug magmauswagon ka.
+                    <sup class="text-sm">9</sup> Hinumdomi ang akong sugo nga magmalig-on ka ug magmaisogon! Ayaw kahadlok o kaluya tungod kay ako, ang Ginoo nga imong Dios, mag-uban kanimo bisan asa ka."                  </span>
+                </i>
+              </p>
+            </div>
+    </div>
+    
+    <br>
+    <span class="sj"><b>1 Peter 2:2-3</b></span><br>
+
+     <div class="tab-2">
+      <button class="tablinks-2" onclick="openCity_2(event, 'NIV2')">NIV</button>
+      <button class="tablinks-2" onclick="openCity_2(event, 'NLT2')">NLT</button>
+      <button id="default-2" class="tablinks-2" onclick="openCity_2(event, 'RCPV2')">RCPV</button>
+      <button id="btnClose-2" class="tablinks-2" style="float:right;display:none" onclick="closeAll_2()">x</button>
+    </div>
+    
+     <div id="NIV2" class="tabcontent-2">
+            <div id="1-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">2</sup> Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, 
+                    <sup class="text-sm">3</sup> now that you have tasted that the Lord is good.        
+                  </span>
+                </i>
+              </p>
+            </div>            
+    </div>
+
+    <div id="NLT2" class="tabcontent-2">
+            <div id="2-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">2</sup> Like newborn babies, you must crave pure spiritual milk so that you will grow into a full experience of salvation. Cry out for this nourishment,
+                    <sup class="text-sm">3</sup> now that you have had a taste of the Lord's kindness.      
+                  </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="RCPV2" class="tabcontent-2">
+            <div id="3-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">2</sup> Sama sa mga bata nga masuso, pangandoy kamo sa lunsayng gatas nga espirituhanon aron sa inyong pag-inom niini motubo kamo ngadto sa kaluwasan
+                    <sup class="text-sm">3</sup> kay natilawan ninyo ang kaayo sa Ginoo.          
+                  </span>
+                </i>
+              </p>
+            </div>
+    </div>
+    
+       
+    <br>
+    <span class="sj"><b>2 Timothy 3:16-17</b></span><br>
+    
+    <div class="tab-3">
+      <button class="tablinks-3" onclick="openCity_3(event, 'NIV3')">NIV</button>
+      <button class="tablinks-3" onclick="openCity_3(event, 'NLT3')">NLT</button>
+      <button id="default-3" class="tablinks-3" onclick="openCity_3(event, 'RCPV3')">RCPV</button>
+      <button id="btnClose-3" class="tablinks-3" style="float:right;display:none" onclick="closeAll_3()">x</button>
+    </div>
+    
+     <div id="NIV3" class="tabcontent-3">
+            <div id="11-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                  <sup class="text-sm">16</sup> All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness,
+                  <sup class="text-sm">17</sup> so that the servant of God[a] may be thoroughly equipped for every good work.
+                  </span>
+                </i>
+              </p>
+            </div>           
+    </div>
+
+    <div id="NLT3" class="tabcontent-3">
+            <div id="22-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                  <sup class="text-sm">16</sup> All Scripture is inspired by God and is useful to teach us what is true and to make us realize what is wrong in our lives. It corrects us when we are wrong and teaches us to do what is right.
+                  <sup class="text-sm">17</sup> God uses it to prepare and equip his people to do every good work.        
+                  </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="RCPV3" class="tabcontent-3">
+            <div id="33-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                  <sup class="text-sm">16</sup> Ang tibuok Kasulatan gisulat uban sa lamdag gikan sa Dios ug mapuslanon alang sa pagtudlo sa kamatuoran, sa pagbadlong, sa pagsaway ug sa pagtudlo unsaon pagkinabuhi nga matarong.
+                  <sup class="text-sm">17</sup> Sa ingon, ang nag-alagad sa Dios masangkap pag-ayo ug maandam sa tanang maayong buhat.              
+                  </span>
+                </i>
+              </p>
+            </div>
+    </div>        
+
+
+    
+    
+    <h4 class="text-light-primary">START</h4>
+    
+    <p class="indent j">Share about one of the most encouraging words you've ever received.<br>
+        <span class="text-super-light-primary sj i">Ipaambit ang imong kasinatian mahitungod sa pinaka makadasig kaayo nga mga pulong  nga imong nadawatan</span>
+    </p>
+     
+     <h4 class="text-light-primary">DISCOVER</h4>
+     
+     <ol>
+         <li>
+            <p class="j">What does the Bible liken the Word of God to in Matthew 4:4 and in 1 Peter 2:2-3? <br>
+            <span class="text-super-light-primary sj i">Gipakasusama sa unsang butang ang pulong sa Ginoo sa Mateo 4:4 ug 1 Pedro 2:2-3 ug ngano?</span></p>         
+         </li>
+         <li>
+            <p class="j" >What are the benefits of meditating the Word of God according to 2 Timothy 3:16-17 and Joshua 1:8-9?<br>
+            <span class="text-super-light-primary sj i">Unsa may mga kaayuhan nga atong mabatunan sa dihang mamalandong kita sa pulong sa Ginoo? 2 Timoteo 3:16-17 ug Josue 1:8-9?</span>
+            </p>
+         </li>  
+         <li>
+            <p class="j" >According to Joshua 1:8-9, how often should we meditate on the Word of God? <br>
+            <span class="text-super-light-primary sj i">Sumala sa Josue 1:8-9, Kapila man ta mamalandong sa Pulong sa Ginoo kada adlaw?</span>
+            </p>
+         </li>                     
+     </ol>
+
+    <h4 class="text-light-primary">LEARN</h4>
+    
+     <ol>
+         <li>
+            <p class="j">Why is the Word of God likened to bread and milk?<br>
+            <span class="text-super-light-primary sj i">Nganong  gisusama ang pulong sa Ginoo sa pan ug gatas?</span>
+            </p>
+         </li>
+         <li>
+            <p class="j">Why do I need to read and meditate the Word of God? How important is it for me?<br>
+            <span class="text-super-light-primary sj i">Nganong gikinahanglan man nako ang pagbasa ug pagpamalandong sa pulong sa Ginoo?</span>
+            </p>
+         </li>                         
+     </ol>    
+     
+     <h4 class="text-light-primary">APPLY</h4>
+            <p class="indent j">Daily read a chapter of the Psalms everyday. Mark the part of the passage that spoke to you personally.  If possible, write them down on a notebook. <br>
+            <span class="text-super-light-primary sj i">Basaha ang libro sa Mga Salmo, usa ka kapitulo kada adlaw. Linyahi ang bahin nga nakatandog kanimo. Kung mahimo, isulat kini sa imong notebook.</span>
+            </p>   
+    </div>
+  </body>
+</html>
+<script>
+
+document.getElementById("default").click();
+document.getElementById("default-2").click(); 
+document.getElementById("default-3").click(); 
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  
+  document.getElementById("btnClose").style.display = "block";
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openCity_2(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-2");
+  
+  document.getElementById("btnClose-2").style.display = "block";
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks-2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openCity_3(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-3");
+  
+  document.getElementById("btnClose-3").style.display = "block";
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks-3");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function closeAll(){
+    document.getElementById("btnClose").style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "none";
+    tabcontent[2].style.display = "none";
+    tablinks[0].className = tablinks[0].className.replace(" active", "");
+    tablinks[1].className = tablinks[1].className.replace(" active", "");
+    tablinks[2].className = tablinks[2].className.replace(" active", "");
+}
+function closeAll_2(){
+    document.getElementById("btnClose-2").style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent-2");
+    var tablinks = document.getElementsByClassName("tablinks-2");
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "none";
+    tabcontent[2].style.display = "none";
+    tablinks[0].className = tablinks[0].className.replace(" active", "");
+    tablinks[1].className = tablinks[1].className.replace(" active", "");
+    tablinks[2].className = tablinks[2].className.replace(" active", "");
+}
+function closeAll_3(){
+    document.getElementById("btnClose-3").style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent-3");
+    var tablinks = document.getElementsByClassName("tablinks-3");
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "none";
+    tabcontent[2].style.display = "none";
+    tablinks[0].className = tablinks[0].className.replace(" active", "");
+    tablinks[1].className = tablinks[1].className.replace(" active", "");
+    tablinks[2].className = tablinks[2].className.replace(" active", "");
+}
+
+</script>

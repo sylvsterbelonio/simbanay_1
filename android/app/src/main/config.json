@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.lpzvalencia.simbanay_1",
+    "vendor" : "example",
+    "version" : {
+      "code": 800000,
+      "name": "1.1.0"
+    }
+  }
+}

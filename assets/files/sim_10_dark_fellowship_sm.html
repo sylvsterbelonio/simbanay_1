@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <style>               
+                        *{font-family: Arial, Geneva, Helvetica, sans-serif; color:#ffffff}
+                        .text-default {color :#f2b909} 
+                        .text-primary { color: #168B8D;}
+                        .text-error { color: #dc3545;}
+                        .text-success {color: #168B8D;background-color: ;padding:10px}
+                        .text-secondary {color: #757575;}
+                        .text-light-primary { color: #1ebabd }
+                        .text-super-light-primary { color: #96f0f2 }
+                        .font-italic { font-style: italic; } 
+                        .font-bold { font-weight: bold; } 
+                        body { width:100%; background-color: #102E4A;margin: 0px; padding: 0px; height: 100%;font-size:12px;} 
+                        .content{  padding: 0px 20px 20px 20px; } 
+                        .indent{margin-left:40px} 
+                        .j{text-align:justify;} 
+                        .i{font-style: italic;}
+                        .c {text-align:center}
+                        .p{text-align: justify;} 
+                        .headings{background-color: #868784;padding: 14px 16px;box-shadow: 0 5px 7px rgb(0 0 0 / 0.4);} 
+                        .column { float: left; width: 50%; padding: 0px; }
+                        .row:after { content: ""; display: table; clear: both; }
+                        .mb-0{ margin-bottom:0dp; }
+                        .row{ padding-top:20px;margin-bottom:20px; }  
+                        .mt-1 {margin-top:10dp;}
+                        .verses{ display:none;padding:1px 16px 1px 16px;background-color:#168B8D;border-radius: 0px 20px 20px 20px;margin:4px 0px 0px 5px}
+                        .button-verse{width:30px;height:30px;background-color:#868784;border-color: white;display:inline;padding:5px 10px 5px 10px;color:#8b0000;border-radius: 10px 10px 0px 0px;margin:0px 0px 0px 5px}
+                        .button-verse-ext{display:inline;}
+                        .text-sm {font-size:10px;}
+                        .highlight-verse{background-color:#168B8D;color:white}
+                        .bullet-none{list-style:none}
+                        span{text-align:justify}
+                        .sj{text-align: justify; display:block;}
+                                               
+                        /* Style the tab */
+                        .tab {
+                          border-radius: 20px 20px 0px 0px;
+                          overflow: hidden;
+                          border: 1px solid #168B8D;
+                          background-color: #0d696b;
+                          color:"#ffffff";
+                        }
+                        .tab-2 {
+                          border-radius: 20px 20px 0px 0px;
+                          overflow: hidden;
+                          border: 1px solid #168B8D;
+                          background-color: #0d696b;
+                          color:"#ffffff";
+                        }
+
+                        /* Style the buttons inside the tab */
+                        .tab button {
+                          background-color: inherit;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          transition: 0.3s;
+                          font-size: 12px;
+                          color:"#ffffff";
+                        }
+                        .tab-2 button {
+                          background-color: inherit;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          transition: 0.3s;
+                          font-size: 12px;
+                          color:"#ffffff";
+                        }
+
+                        /* Change background color of buttons on hover */
+                        .tab button:hover {
+                          background-color: #f2b909;
+                        }
+                        .tab-2 button:hover {
+                          background-color: #f2b909;
+                        }
+
+                        /* Create an active/current tablink class */
+                        .tab button.active {
+                          background-color: #f2b909;
+                        }
+                        .tab-2 button.active {
+                          background-color: #f2b909;
+                        }
+
+                        /* Style the tab content */
+                        .tabcontent {
+                          display: none;
+                          background-color: #168B8D;
+                          padding: 6px 12px;
+                          border: 1px solid #168B8D;
+                          border-top: none;
+                          border-radius: 0px 0px 20px 20px;
+                          -webkit-animation: fadeEffect 1s;
+                          animation: fadeEffect 1s;
+                        }
+                        .tabcontent-2 {
+                          display: none;
+                          background-color: #168B8D;
+                          padding: 6px 12px;
+                          border: 1px solid #168B8D;
+                          border-top: none;
+                          border-radius: 0px 0px 20px 20px;
+                          -webkit-animation: fadeEffect 1s;
+                          animation: fadeEffect 1s;
+                        }
+                                        
+                        /* Fade in tabs */
+                        @-webkit-keyframes fadeEffect {
+                          from {opacity: 0;}
+                          to {opacity: 1;}
+                        }
+
+                        @keyframes fadeEffect {
+                          from {opacity: 0;}
+                          to {opacity: 1;}
+                        }                                                                      
+                                                        
+  </style>        
+  </head>
+  <body>
+  
+    <h3 class="headings">10. FELLOWSHIP | <span class="text-light-primary">PANAGTIGUM </span></H3>
+    <div class="content">
+
+    <span class="sj"><b>Hebrews 10:25</b></span><br>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'NIV')">NIV</button>
+      <button class="tablinks" onclick="openCity(event, 'NLT')">NLT</button>
+      <button id="default" class="tablinks" onclick="openCity(event, 'RCPV')">RCPV</button>
+      <button id="btnClose" class="tablinks" style="float:right;display:none" onclick="closeAll()">x</button>
+    </div>
+    
+    
+     <div id="NIV" class="tabcontent">
+            <div id="6-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">25</sup> not giving up meeting together, as some are in the habit of doing, but encouraging one another - and all the more as you see the Day approaching.
+                    </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="NLT" class="tabcontent">
+            <div id="5-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">25</sup> And let us not neglect our meeting together, as some people do, but encourage one another, especially now that the day of his return is drawing near.
+                    </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="RCPV" class="tabcontent">
+            <div id="4-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">25</sup> Dili nato undangon ang batasan sa panagtigom sama sa gibuhat sa uban. Magdasigay hinuon kita labi na kay nasayod kamo nga hapit na moabot ang Adlaw sa pagbalik sa Ginoo.
+                    </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+            <br>
+            
+        <span class="sj"><b>Acts 2:42-47</b></span><br>
+    
+    <div class="tab-2">
+      <button class="tablinks-2" onclick="openCity_2(event, 'NIV2')">NIV</button>
+      <button class="tablinks-2" onclick="openCity_2(event, 'NLT2')">NLT</button>
+      <button id="default-2" class="tablinks-2" onclick="openCity_2(event, 'RCPV2')">RCPV</button>
+      <button id="btnClose-2" class="tablinks-2" style="float:right;display:none" onclick="closeAll_2()">x</button>
+    </div>
+    
+    
+     <div id="NIV2" class="tabcontent-2">
+            <div id="1-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">42</sup> They devoted themselves to the apostles' teaching and to fellowship, to the breaking of bread and to prayer.
+                    <sup class="text-sm">43</sup> Everyone was filled with awe at the many wonders and signs performed by the apostles.
+                    <sup class="text-sm">44</sup> All the believers were together and had everything in common. 
+                    <sup class="text-sm">45</sup> They sold property and possessions to give to anyone who had need.
+                    <sup class="text-sm">46</sup> Every day they continued to meet together in the temple courts. They broke bread in their homes and ate together with glad and sincere hearts,
+                    <sup class="text-sm">47</sup> praising God and enjoying the favor of all the people. And the Lord added to their number daily those who were being saved.               
+                    </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="NLT2" class="tabcontent-2">
+            <div id="2-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">42</sup> All the believers devoted themselves to the apostles' teaching, and to fellowship, and to sharing in meals (including the Lord's Supper[i]), and to prayer.
+                    <sup class="text-sm">43</sup> A deep sense of awe came over them all, and the apostles performed many miraculous signs and wonders.
+                    <sup class="text-sm">44</sup> And all the believers met together in one place and shared everything they had.
+                    <sup class="text-sm">45</sup> They sold their property and possessions and shared the money with those in need.
+                    <sup class="text-sm">46</sup> They worshiped together at the Temple each day, met in homes for the Lord's Supper, and shared their meals with great joy and generosity - 
+                    <sup class="text-sm">47</sup> all the while praising God and enjoying the goodwill of all the people. And each day the Lord added to their fellowship those who were being saved.              
+                    </span>
+                </i>
+              </p>
+            </div>
+    </div>
+
+    <div id="RCPV2" class="tabcontent-2">
+            <div id="3-content" class="">
+              <p class="j">
+                <i class="indent">
+                <span class="highlight-verse">
+                    <sup class="text-sm">42</sup> Ug mainiton silang mipadayon sa pagpamati sa mga gitudlo sa mga apostoles, sa pagpakigsandurot uban kanila, sa pagpakigsalo sa pagpangaon ug sa mga pag-ampo.
+                    <sup class="text-sm">43</sup> Daghang mga milagro ug mga buhat nga katingalahan ang nahimo pinaagi sa mga apostoles ug tungod niini ang tanan giabot ug katingala uban ang kahadlok.
+                    <sup class="text-sm">44</sup> Ang tanang mga magtutuo nagpadayon sa ilang panagkauban ug ang mga kabtangan sa matag usa kanila gipakig-ambitan nilang tanan.
+                    <sup class="text-sm">45</sup> Ug gipamaligya nila ang ilang mga katigayonan ug ang halin ilang giapod-apod ngadto sa tanan sumala sa gikinahanglan sa usag-usa.
+                    <sup class="text-sm">46</sup> Nagpadayon sila sa pagtigom matag adlaw didto sa Templo ug naghiusa sila pagpangaon uban sa malipayon ug mapaubsanong kasingkasing didto sa ilang mga balay.
+                    <sup class="text-sm">47</sup> Gidayeg nila ang Dios ug gikahimut-an sila sa katawhan. Ug sa matag adlaw gidugangan sa Ginoo ang ilang pundok ug mga tawo nga nangaluwas.                  </span>
+                </i>
+              </p>
+            </div>
+    </div>        
+            
+  
+    
+    <h4 class="text-light-primary">START</h4>
+    
+    <p class="indent j">What unforgettable reunion (family or batch, etc.) can you remember? <br>
+        <span class="text-super-light-primary sj i">Unsa nga reunion ang dili gyud nimo malimtan?</span>
+    </p>
+     
+     <h4 class="text-light-primary">DISCOVER</h4>
+     
+     <ol>
+         <li>
+            <p class="j">What commands can we find in Hebrews 10.25? <br>
+            <span class="text-super-light-primary sj i">Unsay klaro nga sugo nga atong makita sa Hebrohanon 10:25?</span></p>         
+         </li>
+         <li>
+            <p class="j" >What were the common practices of the early church? (Acts 2:42) <br>
+            <span class="text-super-light-primary sj i">Unsay mga gimbuhaton sa mga magtutuo sa unang panahon?</span>
+            </p>
+         </li>  
+         <li>
+            <p class="j" >How often, where and how did the believers meet? (Acts 2.46-47) <br>
+            <span class="text-super-light-primary sj i">Kapila, asa, ug sa unsang paagi sila nagakatigum?</span>
+            </p>
+         </li>        
+         <li>
+            <p class="j" >What did the believers do when they met in homes? In the temple? (Acts 2.46-47) <br>
+            <span class="text-super-light-primary sj i">Unsay ilang ginabuhat sa ilang panagtigom sa balay? Sa Templo?</span>
+            </p>
+         </li>   
+         <li>
+            <p class="j" >What were the results of their coming together?<br>
+            <span class="text-super-light-primary sj i">Unsay resulta sa ilang mga panagtigum?</span>
+            </p>
+         </li>                                                 
+     </ol>
+
+    <h4 class="text-light-primary">LEARN</h4>
+    
+     <ol>
+         <li>
+            <p class="j">Do we still see the same practices being done today and seeing the same results? Why?<br>
+            <span class="text-super-light-primary sj i">Mao pa ba gihapon ang atong gakakita nga mga ginahimo karon  ug susama ra ba gihapon nga resulta?</span>
+            </p>
+         </li>
+         <li>
+            <p class="j">What benefits have you received as you started to fellowship with other believers? <br>
+            <span class="text-super-light-primary sj i">Unsay kaayuhan nga imong nabatunan sa dihang nakig-uban ka sa mga magtutuo?</span>
+            </p>
+         </li>                                  
+     </ol>    
+     
+     <h4 class="text-light-primary">APPLY</h4>
+            <p class="indent j">Invite at least one person for the next Simbanay.<br>
+            <span class="text-super-light-primary sj i">Pag-imbitar ug bisan usa lang ka tawo sa sunod simbanay.</span>
+            </p>             
+    </div>
+  </body>
+</html>
+<script>
+
+document.getElementById("default").click();
+document.getElementById("default-2").click(); 
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  
+  document.getElementById("btnClose").style.display = "block";
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+function openCity_2(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-2");
+  
+  document.getElementById("btnClose-2").style.display = "block";
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks-2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function closeAll(){
+    document.getElementById("btnClose").style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent");
+    var tablinks = document.getElementsByClassName("tablinks");
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "none";
+    tabcontent[2].style.display = "none";
+    tablinks[0].className = tablinks[0].className.replace(" active", "");
+    tablinks[1].className = tablinks[1].className.replace(" active", "");
+    tablinks[2].className = tablinks[2].className.replace(" active", "");
+}
+function closeAll_2(){
+    document.getElementById("btnClose-2").style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent-2");
+    var tablinks = document.getElementsByClassName("tablinks-2");
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "none";
+    tabcontent[2].style.display = "none";
+    tablinks[0].className = tablinks[0].className.replace(" active", "");
+    tablinks[1].className = tablinks[1].className.replace(" active", "");
+    tablinks[2].className = tablinks[2].className.replace(" active", "");
+}
+
+</script>
